@@ -1,0 +1,21 @@
+[package]
+name = "todo-service-api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+todo-service-domain = { path = "../todo-service-domain" }
+
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
+anyhow = "1.0.98"
+dotenvy = "0.15.7"
+time = "0.3.41"
+tracing = "0.1.41"
+uuid = "1.17.0"
+tonic = "0.14.1"
+tonic-prost = "0.14.1"
+prost = "0.14.1"
+prost-types = "0.14.1"
+
+[build-dependencies]
+tonic-prost-build = "0.14.1"

@@ -2,5 +2,5 @@
 
 **Environment setup (.env)**
 
-- ADDR - listening address
-- DATABASE_URL - database connection address
+- ADDR: listening address
+- DATABASE_URL: PostgreSQL connection address

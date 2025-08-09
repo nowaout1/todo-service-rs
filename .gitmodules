@@ -1,0 +1,3 @@
+[submodule "crates/todo-service-api/todo-service-proto"]
+	path = crates/todo-service-api/todo-service-proto
+	url = https://github.com/nowaout1/todo-service-proto/

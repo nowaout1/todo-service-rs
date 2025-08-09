@@ -1,0 +1,13 @@
+services:
+  todo-service:
+    build:
+      context: .
+      args:
+        DATABASE_URL: ${DATABASE_URL}
+    ports:
+      - "50051:50051"
+    env_file:
+      - .env
+    environment:
+      - RUST_LOG=info
+      - DATABASE_URL=${DATABASE_URL}
